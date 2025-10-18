@@ -1,0 +1,105 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+  "@odata.id": "identity/conditionalAccess/policies('9772e1cb-c475-4729-862a-17d25f449813')",
+  "@odata.editLink": "identity/conditionalAccess/policies('9772e1cb-c475-4729-862a-17d25f449813')",
+  "id": "9772e1cb-c475-4729-862a-17d25f449813",
+  "templateId": null,
+  "displayName": "CAD006-O365: Session block download on unmanaged device for All users when Browser and Modern App Clients and Non-Compliant-v1.5",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2022-10-13T11:05:05.5215329Z",
+  "modifiedDateTime@odata.type": "#DateTimeOffset",
+  "modifiedDateTime": "2023-08-01T08:40:44.4979207Z",
+  "state@odata.type": "#microsoft.graph.conditionalAccessPolicyState",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "partialEnablementStrategy": null,
+  "conditions": {
+    "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+    "userRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "userRiskLevels": [],
+    "signInRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "signInRiskLevels": [],
+    "clientAppTypes@odata.type": "#Collection(microsoft.graph.conditionalAccessClientApp)",
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "clientApplications": null,
+    "applications": {
+      "@odata.type": "#microsoft.graph.conditionalAccessApplications",
+      "includeApplications@odata.type": "#Collection(String)",
+      "includeApplications": [
+        "Office365"
+      ],
+      "excludeApplications@odata.type": "#Collection(String)",
+      "excludeApplications": [],
+      "includeUserActions@odata.type": "#Collection(String)",
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences@odata.type": "#Collection(String)",
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "@odata.type": "#microsoft.graph.conditionalAccessUsers",
+      "includeUsers@odata.type": "#Collection(String)",
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers@odata.type": "#Collection(String)",
+      "excludeUsers": [],
+      "includeGroups@odata.type": "#Collection(String)",
+      "includeGroups": [],
+      "excludeGroups@odata.type": "#Collection(String)",
+      "excludeGroups": [
+        "79a5727e-811c-4aa5-aff1-2e1966a0d4be",
+        "eb89e728-4ff7-4b84-a97b-fde9175371f6"
+      ],
+      "includeRoles@odata.type": "#Collection(String)",
+      "includeRoles": [],
+      "excludeRoles@odata.type": "#Collection(String)",
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    },
+    "devices": {
+      "@odata.type": "#microsoft.graph.conditionalAccessDevices",
+      "includeDeviceStates@odata.type": "#Collection(String)",
+      "includeDeviceStates": [],
+      "excludeDeviceStates@odata.type": "#Collection(String)",
+      "excludeDeviceStates": [],
+      "includeDevices@odata.type": "#Collection(String)",
+      "includeDevices": [],
+      "excludeDevices@odata.type": "#Collection(String)",
+      "excludeDevices": [],
+      "deviceFilter": {
+        "@odata.type": "#microsoft.graph.conditionalAccessFilter",
+        "mode@odata.type": "#microsoft.graph.filterMode",
+        "mode": "exclude",
+        "rule": "device.isCompliant -eq True -or device.trustType -eq \"ServerAD\""
+      }
+    }
+  },
+  "sessionControls": {
+    "@odata.type": "#microsoft.graph.conditionalAccessSessionControls",
+    "disableResilienceDefaults": null,
+    "cloudAppSecurity": null,
+    "signInFrequency": null,
+    "persistentBrowser": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "applicationEnforcedRestrictions": {
+      "@odata.type": "#microsoft.graph.applicationEnforcedRestrictionsSessionControl",
+      "isEnabled": true
+    }
+  },
+  "#microsoft.graph.restore": {
+    "title": "microsoft.graph.restore",
+    "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('9772e1cb-c475-4729-862a-17d25f449813')/microsoft.graph.restore"
+  }
+}

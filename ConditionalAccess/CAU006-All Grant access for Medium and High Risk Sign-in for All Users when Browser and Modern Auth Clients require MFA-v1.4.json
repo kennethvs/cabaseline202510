@@ -1,0 +1,112 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+  "@odata.id": "identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')",
+  "@odata.editLink": "identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')",
+  "id": "69a13ff1-76fd-467f-a44b-32243eebdc44",
+  "templateId": null,
+  "displayName": "CAU006-All: Grant access for Medium and High Risk Sign-in for All Users when Browser and Modern Auth Clients require MFA-v1.4",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2025-10-08T10:58:19.5540443Z",
+  "modifiedDateTime": null,
+  "state@odata.type": "#microsoft.graph.conditionalAccessPolicyState",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "conditions": {
+    "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+    "userRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "userRiskLevels": [],
+    "signInRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "signInRiskLevels": [
+      "high",
+      "medium"
+    ],
+    "clientAppTypes@odata.type": "#Collection(microsoft.graph.conditionalAccessClientApp)",
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "@odata.type": "#microsoft.graph.conditionalAccessApplications",
+      "includeApplications@odata.type": "#Collection(String)",
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications@odata.type": "#Collection(String)",
+      "excludeApplications": [],
+      "includeUserActions@odata.type": "#Collection(String)",
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences@odata.type": "#Collection(String)",
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "@odata.type": "#microsoft.graph.conditionalAccessUsers",
+      "includeUsers@odata.type": "#Collection(String)",
+      "includeUsers": [
+        "All"
+      ],
+      "excludeUsers@odata.type": "#Collection(String)",
+      "excludeUsers": [],
+      "includeGroups@odata.type": "#Collection(String)",
+      "includeGroups": [],
+      "excludeGroups@odata.type": "#Collection(String)",
+      "excludeGroups": [
+        "79a5727e-811c-4aa5-aff1-2e1966a0d4be",
+        "f3335c51-ef78-474b-8d30-1185563d0da8"
+      ],
+      "includeRoles@odata.type": "#Collection(String)",
+      "includeRoles": [],
+      "excludeRoles@odata.type": "#Collection(String)",
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "@odata.type": "#microsoft.graph.conditionalAccessGrantControls",
+    "operator": "OR",
+    "builtInControls@odata.type": "#Collection(microsoft.graph.conditionalAccessGrantControl)",
+    "builtInControls": [
+      "mfa"
+    ],
+    "customAuthenticationFactors@odata.type": "#Collection(String)",
+    "customAuthenticationFactors": [],
+    "termsOfUse@odata.type": "#Collection(String)",
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength@odata.associationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')/grantControls/authenticationStrength/$ref",
+    "authenticationStrength@odata.navigationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')/grantControls/authenticationStrength",
+    "authenticationStrength": null
+  },
+  "sessionControls": {
+    "@odata.type": "#microsoft.graph.conditionalAccessSessionControls",
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "persistentBrowser": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "signInFrequency": {
+      "@odata.type": "#microsoft.graph.signInFrequencySessionControl",
+      "value": null,
+      "type": null,
+      "authenticationType@odata.type": "#microsoft.graph.signInFrequencyAuthenticationType",
+      "authenticationType": "primaryAndSecondaryAuthentication",
+      "frequencyInterval@odata.type": "#microsoft.graph.signInFrequencyInterval",
+      "frequencyInterval": "everyTime",
+      "isEnabled": true
+    }
+  },
+  "#microsoft.graph.restore": {
+    "title": "microsoft.graph.restore",
+    "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('69a13ff1-76fd-467f-a44b-32243eebdc44')/microsoft.graph.restore"
+  }
+}

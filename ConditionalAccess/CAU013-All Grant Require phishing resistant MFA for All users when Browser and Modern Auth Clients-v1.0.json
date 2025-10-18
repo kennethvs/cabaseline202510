@@ -1,0 +1,125 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+  "@odata.id": "identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')",
+  "@odata.editLink": "identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')",
+  "id": "c613d780-9bf7-466c-a9ab-9787dc99e36c",
+  "templateId": null,
+  "displayName": "CAU013-All: Grant Require phishing resistant MFA for All users when Browser and Modern Auth Clients-v1.0",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2024-09-17T09:01:06.6551672Z",
+  "modifiedDateTime@odata.type": "#DateTimeOffset",
+  "modifiedDateTime": "2024-10-07T10:10:05.5809176Z",
+  "state@odata.type": "#microsoft.graph.conditionalAccessPolicyState",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "partialEnablementStrategy": null,
+  "sessionControls": null,
+  "conditions": {
+    "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+    "userRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "userRiskLevels": [],
+    "signInRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "signInRiskLevels": [],
+    "clientAppTypes@odata.type": "#Collection(microsoft.graph.conditionalAccessClientApp)",
+    "clientAppTypes": [
+      "browser",
+      "mobileAppsAndDesktopClients"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "@odata.type": "#microsoft.graph.conditionalAccessApplications",
+      "includeApplications@odata.type": "#Collection(String)",
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications@odata.type": "#Collection(String)",
+      "excludeApplications": [
+        "45a330b1-b1ec-4cc1-9161-9f03992aa49f"
+      ],
+      "includeUserActions@odata.type": "#Collection(String)",
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences@odata.type": "#Collection(String)",
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "@odata.type": "#microsoft.graph.conditionalAccessUsers",
+      "includeUsers@odata.type": "#Collection(String)",
+      "includeUsers": [],
+      "excludeUsers@odata.type": "#Collection(String)",
+      "excludeUsers": [],
+      "includeGroups@odata.type": "#Collection(String)",
+      "includeGroups": [
+        "890fbbb7-3b37-4e7d-9b17-6ad55288d225"
+      ],
+      "excludeGroups@odata.type": "#Collection(String)",
+      "excludeGroups": [
+        "79a5727e-811c-4aa5-aff1-2e1966a0d4be",
+        "55777573-efd4-4c4e-9924-ff804da2696d"
+      ],
+      "includeRoles@odata.type": "#Collection(String)",
+      "includeRoles": [],
+      "excludeRoles@odata.type": "#Collection(String)",
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": null
+    }
+  },
+  "grantControls": {
+    "@odata.type": "#microsoft.graph.conditionalAccessGrantControls",
+    "operator": "OR",
+    "builtInControls@odata.type": "#Collection(microsoft.graph.conditionalAccessGrantControl)",
+    "builtInControls": [],
+    "customAuthenticationFactors@odata.type": "#Collection(String)",
+    "customAuthenticationFactors": [],
+    "termsOfUse@odata.type": "#Collection(String)",
+    "termsOfUse": [],
+    "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/$entity",
+    "authenticationStrength@odata.associationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/$ref",
+    "authenticationStrength@odata.navigationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength",
+    "authenticationStrength": {
+      "@odata.type": "#microsoft.graph.authenticationStrengthPolicy",
+      "@odata.id": "identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength",
+      "@odata.editLink": "identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength",
+      "id": "00000000-0000-0000-0000-000000000004",
+      "createdDateTime@odata.type": "#DateTimeOffset",
+      "createdDateTime": "2021-12-01T08:00:00Z",
+      "modifiedDateTime@odata.type": "#DateTimeOffset",
+      "modifiedDateTime": "2021-12-01T08:00:00Z",
+      "displayName": "Phishing-resistant MFA",
+      "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+      "policyType@odata.type": "#microsoft.graph.authenticationStrengthPolicyType",
+      "policyType": "builtIn",
+      "requirementsSatisfied@odata.type": "#microsoft.graph.authenticationStrengthRequirements",
+      "requirementsSatisfied": "mfa",
+      "allowedCombinations@odata.type": "#Collection(microsoft.graph.authenticationMethodModes)",
+      "allowedCombinations": [
+        "windowsHelloForBusiness",
+        "fido2",
+        "x509CertificateMultiFactor"
+      ],
+      "combinationConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/combinationConfigurations",
+      "combinationConfigurations@odata.associationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/combinationConfigurations/$ref",
+      "combinationConfigurations@odata.navigationLink": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/combinationConfigurations",
+      "combinationConfigurations": [],
+      "#microsoft.graph.updateAllowedCombinations": {
+        "title": "microsoft.graph.updateAllowedCombinations",
+        "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/microsoft.graph.updateAllowedCombinations"
+      },
+      "#microsoft.graph.usage": {
+        "title": "microsoft.graph.usage",
+        "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/grantControls/authenticationStrength/microsoft.graph.usage"
+      }
+    }
+  },
+  "#microsoft.graph.restore": {
+    "title": "microsoft.graph.restore",
+    "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('c613d780-9bf7-466c-a9ab-9787dc99e36c')/microsoft.graph.restore"
+  }
+}

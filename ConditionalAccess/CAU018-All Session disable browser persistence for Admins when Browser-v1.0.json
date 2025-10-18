@@ -1,0 +1,123 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/policies/$entity",
+  "@odata.type": "#microsoft.graph.conditionalAccessPolicy",
+  "@odata.id": "identity/conditionalAccess/policies('254e61bf-924f-4daa-b54c-534878b5cd15')",
+  "@odata.editLink": "identity/conditionalAccess/policies('254e61bf-924f-4daa-b54c-534878b5cd15')",
+  "id": "254e61bf-924f-4daa-b54c-534878b5cd15",
+  "templateId": null,
+  "displayName": "CAU018-All: Session disable browser persistence for Admins when Browser-v1.0",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2025-10-16T06:20:04.7024621Z",
+  "modifiedDateTime": null,
+  "state@odata.type": "#microsoft.graph.conditionalAccessPolicyState",
+  "state": "enabledForReportingButNotEnforced",
+  "deletedDateTime": null,
+  "grantControls": null,
+  "partialEnablementStrategy": null,
+  "conditions": {
+    "@odata.type": "#microsoft.graph.conditionalAccessConditionSet",
+    "userRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "userRiskLevels": [],
+    "signInRiskLevels@odata.type": "#Collection(microsoft.graph.riskLevel)",
+    "signInRiskLevels": [],
+    "clientAppTypes@odata.type": "#Collection(microsoft.graph.conditionalAccessClientApp)",
+    "clientAppTypes": [
+      "browser"
+    ],
+    "platforms": null,
+    "locations": null,
+    "times": null,
+    "deviceStates": null,
+    "devices": null,
+    "clientApplications": null,
+    "applications": {
+      "@odata.type": "#microsoft.graph.conditionalAccessApplications",
+      "includeApplications@odata.type": "#Collection(String)",
+      "includeApplications": [
+        "All"
+      ],
+      "excludeApplications@odata.type": "#Collection(String)",
+      "excludeApplications": [],
+      "includeUserActions@odata.type": "#Collection(String)",
+      "includeUserActions": [],
+      "includeAuthenticationContextClassReferences@odata.type": "#Collection(String)",
+      "includeAuthenticationContextClassReferences": [],
+      "applicationFilter": null
+    },
+    "users": {
+      "@odata.type": "#microsoft.graph.conditionalAccessUsers",
+      "includeUsers@odata.type": "#Collection(String)",
+      "includeUsers": [],
+      "excludeUsers@odata.type": "#Collection(String)",
+      "excludeUsers": [],
+      "includeGroups@odata.type": "#Collection(String)",
+      "includeGroups": [],
+      "excludeGroups@odata.type": "#Collection(String)",
+      "excludeGroups": [
+        "79a5727e-811c-4aa5-aff1-2e1966a0d4be",
+        "ff021b4a-de98-4c5e-950a-2fe9732a44e6"
+      ],
+      "includeRoles@odata.type": "#Collection(String)",
+      "includeRoles": [
+        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+        "cf1c38e5-3621-4004-a7cb-879624dced7c",
+        "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+        "25a516ed-2fa0-40ea-a2d0-12923a21473a",
+        "aaf43236-0c0d-4d5f-883a-6955382ac081",
+        "b0f54661-2d74-4c50-afa3-1ec803f12efe",
+        "158c047a-c907-4556-b7ef-446551a6b5f7",
+        "7698a772-787b-4ac8-901f-60d6b08affd2",
+        "17315797-102d-40b4-93e0-432062caca18",
+        "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+        "9360feb5-f418-4baa-8175-e2a00bac4301",
+        "29232cdf-9323-42fd-ade2-1d097af3e4de",
+        "62e90394-69f5-4237-9190-012177145e10",
+        "f2ef992c-3afb-46b9-b7cf-a126ee74c451",
+        "729827e3-9c14-49f7-bb1b-9608f156bbb8",
+        "8ac3fc64-6eca-42ea-9e69-59f4c7b60eb2",
+        "3a2c62db-5318-420d-8d74-23affee5d9d5",
+        "966707d0-3269-4727-9be2-8c3a10f19b9d",
+        "7be44c8a-adaf-4e2a-84d6-ab2649e08a13",
+        "e8611ab8-c189-46e8-94e1-60213ab1f814",
+        "194ae4cb-b126-40b2-bd5b-6091b380977d",
+        "5f2222b1-57c3-48ba-8ad5-d4759f1fde6f",
+        "5d6b6bb7-de71-4623-b4af-96380a352509",
+        "f28a1f50-f6e7-4571-818b-6a12f2af6b6c",
+        "69091246-20e8-4a56-aa4d-066075b2a7a8",
+        "fe930be7-5e62-47db-91af-98c3a49a38b1"
+      ],
+      "excludeRoles@odata.type": "#Collection(String)",
+      "excludeRoles": [],
+      "includeGuestsOrExternalUsers": null,
+      "excludeGuestsOrExternalUsers": {
+        "@odata.type": "#microsoft.graph.conditionalAccessGuestsOrExternalUsers",
+        "guestOrExternalUserTypes@odata.type": "#microsoft.graph.conditionalAccessGuestOrExternalUserTypes",
+        "guestOrExternalUserTypes": "serviceProvider",
+        "externalTenants": {
+          "@odata.type": "#microsoft.graph.conditionalAccessAllExternalTenants",
+          "membershipKind@odata.type": "#microsoft.graph.conditionalAccessExternalTenantsMembershipKind",
+          "membershipKind": "all"
+        }
+      }
+    }
+  },
+  "sessionControls": {
+    "@odata.type": "#microsoft.graph.conditionalAccessSessionControls",
+    "disableResilienceDefaults": null,
+    "applicationEnforcedRestrictions": null,
+    "cloudAppSecurity": null,
+    "signInFrequency": null,
+    "continuousAccessEvaluation": null,
+    "secureSignInSession": null,
+    "persistentBrowser": {
+      "@odata.type": "#microsoft.graph.persistentBrowserSessionControl",
+      "mode@odata.type": "#microsoft.graph.persistentBrowserSessionMode",
+      "mode": "never",
+      "isEnabled": true
+    }
+  },
+  "#microsoft.graph.restore": {
+    "title": "microsoft.graph.restore",
+    "target": "https://graph.microsoft.com/beta/identity/conditionalAccess/policies('254e61bf-924f-4daa-b54c-534878b5cd15')/microsoft.graph.restore"
+  }
+}
