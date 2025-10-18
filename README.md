@@ -2,6 +2,8 @@
 
 This repository contains a comprehensive set of Microsoft Entra ID (Azure AD) Conditional Access policies designed to secure organizational access to cloud applications and resources.
 
+PDF contains visual representation created by Conditional Access Documenter created by @Merril - https://idpowertoys.merill.net/ca
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -490,3 +492,4 @@ These policies are provided as-is for reference and adaptation to your organizat
 **Last Updated**: October 2025  
 **Total Policies**: 48  
 **Policy Categories**: 4 (CAD, CAL, CAP, CAU)
+
