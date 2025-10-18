@@ -84,25 +84,25 @@ These policies enforce device compliance and platform-specific access controls.
 
 | Policy ID | Name | Version | Status | Description |
 |-----------|------|---------|--------|-------------|
-| CAD001 | CAD001-O365 Grant macOS access for All users when Modern Auth Clients and Compliant | v1.1 | Enabled | Allows macOS devices to access Office 365 when compliant |
-| CAD002 | CAD002-O365 Grant Windows access for All users when Modern Auth Clients and Compliant | v1.1 | Enabled | Allows Windows devices to access Office 365 when compliant |
-| CAD003 | CAD003-O365 Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.3 | Enabled | Allows mobile devices with app protection policy or compliance |
-| CAD004 | CAD004-O365 Grant Require MFA for All users when Browser and Non-Compliant | v1.3 | Enabled | Requires MFA for browser access on non-compliant devices |
-| CAD005 | CAD005-O365 Block access for unsupported device platforms for All users when Modern Auth Clients | v1.1 | Enabled | Blocks access from unsupported platforms |
-| CAD006 | CAD006-O365 Session block download on unmanaged device for All users when Browser and Modern App Clients and Non-Compliant | v1.5 | Enabled | Prevents downloads on non-compliant devices |
-| CAD007 | CAD007-O365 Session set Sign-in Frequency for Apps for All users when Modern Auth Clients and Non-Compliant | v1.2 | Enabled | Enforces re-authentication for non-compliant devices |
-| CAD008 | CAD008-All Session set Sign-in Frequency for All users when Browser and Non-Compliant | v1.1 | Enabled | Enforces browser re-authentication frequency |
-| CAD009 | CAD009-All Session disable browser persistence for All users when Browser and Non-Compliant | v1.2 | Enabled | Prevents persistent browser sessions on non-compliant devices |
-| CAD010 | CAD010-RJD Require MFA for device join or registration when Browser and Modern Auth Clients | v1.1 | Enabled | Requires MFA for device registration actions |
-| CAD011 | CAD011-O365 Grant Linux access for All users when Modern Auth Clients and Compliant | v1.0 | Enabled | Allows Linux devices to access Office 365 when compliant |
-| CAD012 | CAD012-All Grant access for Admin users when Browser and Modern Auth Clients and Compliant | v1.1 | Enabled | Grants admin access with compliance requirement |
-| CAD013 | CAD013-Selected Grant access for All users when Browser and Modern Auth Clients and Compliant | v1.0 | Enabled | General compliant device access policy |
-| CAD014 | CAD014-O365 Require App Protection Policy for Edge on Windows for All users when Browser and Non-Compliant | v1.0 | Enabled | Enforces app protection for Edge browser |
-| CAD015 | CAD015-All Grant access for All users when Browser and Modern Auth Clients and Compliant on Windows and macOS | v1.0 | Enabled | Platform-specific compliance policy |
-| CAD016 | CAD016-EXO_SPO_CloudPC Require token protection when Modern Auth Clients on Windows | v1.2 | Enabled | Enforces token protection for Exchange, SharePoint, and Cloud PC |
-| CAD017 | CAD017-Selected Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.1 | Enabled | Mobile access with approved apps or compliance |
-| CAD018 | CAD018-CloudPC Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.0 | Enabled | Cloud PC mobile access policy |
-| CAD019 | CAD019-Intune Require MFA and set sign-in frequency to every time | v1.0 | Enabled | Enforces MFA for Intune access with continuous authentication |
+| CAD001 | CAD001-O365 Grant macOS access for All users when Modern Auth Clients and Compliant | v1.1 | Must Have | Allows macOS devices to access Office 365 when compliant |
+| CAD002 | CAD002-O365 Grant Windows access for All users when Modern Auth Clients and Compliant | v1.1 | Must Have | Allows Windows devices to access Office 365 when compliant |
+| CAD003 | CAD003-O365 Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.3 | Must Have | Allows mobile devices with app protection policy or compliance |
+| CAD004 | CAD004-O365 Grant Require MFA for All users when Browser and Non-Compliant | v1.3 | Must Have | Requires MFA for browser access on non-compliant devices |
+| CAD005 | CAD005-O365 Block access for unsupported device platforms for All users when Modern Auth Clients | v1.1 | Must Have | Blocks access from unsupported platforms |
+| CAD006 | CAD006-O365 Session block download on unmanaged device for All users when Browser and Modern App Clients and Non-Compliant | v1.5 | Could Have | Prevents downloads on non-compliant devices |
+| CAD007 | CAD007-O365 Session set Sign-in Frequency for Apps for All users when Modern Auth Clients and Non-Compliant | v1.2 | Could Have | Enforces re-authentication for non-compliant devices |
+| CAD008 | CAD008-All Session set Sign-in Frequency for All users when Browser and Non-Compliant | v1.1 | Must Have | Enforces browser re-authentication frequency |
+| CAD009 | CAD009-All Session disable browser persistence for All users when Browser and Non-Compliant | v1.2 | Must Have | Prevents persistent browser sessions on non-compliant devices |
+| CAD010 | CAD010-RJD Require MFA for device join or registration when Browser and Modern Auth Clients | v1.1 | Must Have | Requires MFA for device registration actions |
+| CAD011 | CAD011-O365 Grant Linux access for All users when Modern Auth Clients and Compliant | v1.0 | Must Have | Allows Linux devices to access Office 365 when compliant |
+| CAD012 | CAD012-All Grant access for Admin users when Browser and Modern Auth Clients and Compliant | v1.1 | Could Have | Grants admin access with compliance requirement |
+| CAD013 | CAD013-Selected Grant access for All users when Browser and Modern Auth Clients and Compliant | v1.0 | Could Have | General compliant device access policy |
+| CAD014 | CAD014-O365 Require App Protection Policy for Edge on Windows for All users when Browser and Non-Compliant | v1.0 | Could Have | Enforces app protection for Edge browser |
+| CAD015 | CAD015-All Grant access for All users when Browser and Modern Auth Clients and Compliant on Windows and macOS | v1.0 | Could Have | Platform-specific compliance policy |
+| CAD016 | CAD016-EXO_SPO_CloudPC Require token protection when Modern Auth Clients on Windows | v1.2 | Could Have | Enforces token protection for Exchange, SharePoint, and Cloud PC |
+| CAD017 | CAD017-Selected Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.1 | Could Have | Mobile access with approved apps or compliance |
+| CAD018 | CAD018-CloudPC Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant | v1.0 | Could Have | Cloud PC mobile access policy |
+| CAD019 | CAD019-Intune Require MFA and set sign-in frequency to every time | v1.0 | Must Have | Enforces MFA for Intune access with continuous authentication |
 
 ### Location-Related Policies (CAL)
 
@@ -110,12 +110,12 @@ These policies control access based on geographic location and trusted networks.
 
 | Policy ID | Name | Version | Status | Description |
 |-----------|------|---------|--------|-------------|
-| CAL001 | CAL001-All Block specified locations for All users when Browser and Modern Auth Clients | v1.1 | Enabled | Blocks access from specified geographic locations |
-| CAL002 | CAL002-RSI Require MFA registration from trusted locations only for All users when Browser and Modern Auth Clients | v1.4 | Enabled | Restricts security info registration to trusted locations |
-| CAL003 | CAL003-All Block Access for Specified Service Accounts except from Provided Trusted Locations when Browser and Modern Auth Clients | v1.1 | Enabled | Limits service account access to trusted networks |
-| CAL004 | CAL004-All Block access for Admins from non-trusted locations when Browser and Modern Auth Clients | v1.2 | Enabled | Prevents admin access from untrusted locations |
-| CAL005 | CAL005-Selected Grant access for All users on less-trusted locations when Browser and Modern Auth Clients and Compliant | v1.0 | Enabled | Allows compliant device access from less-trusted locations |
-| CAL006 | CAL006-All Only Allow Access from specified locations for specific accounts when Browser and Modern Auth Clients | v1.0 | Enabled | Restricts specific accounts to designated locations only |
+| CAL001 | CAL001-All Block specified locations for All users when Browser and Modern Auth Clients | v1.1 | Could Have | Blocks access from specified geographic locations |
+| CAL002 | CAL002-RSI Require MFA registration from trusted locations only for All users when Browser and Modern Auth Clients | v1.4 | Could Have | Restricts security info registration to trusted locations |
+| CAL003 | CAL003-All Block Access for Specified Service Accounts except from Provided Trusted Locations when Browser and Modern Auth Clients | v1.1 | Could Have | Limits service account access to trusted networks |
+| CAL004 | CAL004-All Block access for Admins from non-trusted locations when Browser and Modern Auth Clients | v1.2 | Could Have | Prevents admin access from untrusted locations |
+| CAL005 | CAL005-Selected Grant access for All users on less-trusted locations when Browser and Modern Auth Clients and Compliant | v1.0 | Could Have | Allows compliant device access from less-trusted locations |
+| CAL006 | CAL006-All Only Allow Access from specified locations for specific accounts when Browser and Modern Auth Clients | v1.0 | Could Have | Restricts specific accounts to designated locations only |
 
 ### Prerequisite Policies (CAP)
 
@@ -123,10 +123,10 @@ These are foundational policies that manage authentication protocols and methods
 
 | Policy ID | Name | Version | Status | Description |
 |-----------|------|---------|--------|-------------|
-| CAP001 | CAP001-All Block Legacy Authentication for All users when OtherClients | v1.0 | Enabled | Blocks legacy authentication protocols |
-| CAP002 | CAP002-All Block Exchange ActiveSync Clients for All users | v1.1 | Enabled | Blocks Exchange ActiveSync connections |
-| CAP003 | CAP003-All Block device code authentication flow | v1.0 | Enabled | Prevents device code authentication method |
-| CAP004 | CAP004-All Block authentication transfer | v1.0 | Enabled | Blocks authentication transfer flows |
+| CAP001 | CAP001-All Block Legacy Authentication for All users when OtherClients | v1.0 | Must Have | Blocks legacy authentication protocols |
+| CAP002 | CAP002-All Block Exchange ActiveSync Clients for All users | v1.1 | Must Have | Blocks Exchange ActiveSync connections |
+| CAP003 | CAP003-All Block device code authentication flow | v1.0 | Must Have | Prevents device code authentication method |
+| CAP004 | CAP004-All Block authentication transfer | v1.0 | Must Have | Blocks authentication transfer flows |
 
 ### User-Related Policies (CAU)
 
@@ -134,26 +134,26 @@ These policies focus on user identity, MFA requirements, and risk-based access c
 
 | Policy ID | Name | Version | Status | Description |
 |-----------|------|---------|--------|-------------|
-| CAU001 | CAU001-All Grant Require MFA for guests when Browser and Modern Auth Clients | v1.1 | Enabled | Requires MFA for guest user access |
-| CAU001A | CAU001A-Windows Azure Active Directory Grant Require MFA for guests when Browser and Modern Auth Clients | v1.0 | Enabled | Requires MFA for Azure AD guest access |
-| CAU002 | CAU002-All Grant Require MFA for All users when Browser and Modern Auth Clients | v1.5 | Enabled | Universal MFA requirement |
-| CAU003 | CAU003-Selected Block unapproved apps for guests when Browser and Modern Auth Clients | v1.0 | Enabled | Restricts guest access to approved applications |
-| CAU004 | CAU004-Selected Session route through MDCA for All users when Browser on Non-Compliant | v1.2 | Enabled | Routes non-compliant traffic through Microsoft Defender for Cloud Apps |
-| CAU005 | CAU005-Selected Session route through MDCA for All users when Browser on Compliant | v1.1 | Enabled | Routes compliant traffic through MDCA for monitoring |
-| CAU006 | CAU006-All Grant access for Medium and High Risk Sign-in for All Users when Browser and Modern Auth Clients require MFA | v1.4 | Enabled | Requires MFA for risky sign-ins |
-| CAU007 | CAU007-All Grant access for Medium and High Risk Users for All Users when Browser and Modern Auth Clients require PWD reset | v1.3 | Enabled | Requires password reset for risky users |
-| CAU008 | CAU008-All Grant Require Phishing Resistant MFA for Admins when Browser and Modern Auth Clients | v1.4 | Enabled | Enforces phishing-resistant MFA for administrators |
-| CAU009 | CAU009-Management Grant Require MFA for Admin Portals for All Users when Browser and Modern Auth Clients | v1.2 | Enabled | Requires MFA for management portal access |
-| CAU010 | CAU010-All Grant Require ToU for All Users when Browser and Modern Auth Clients | v1.2 | Enabled | Enforces Terms of Use acceptance |
-| CAU011 | CAU011-All Block access for All users except licensed when Browser and Modern Auth Clients | v1.0 | Enabled | Restricts access to licensed users only |
-| CAU012 | CAU012-RSI Combined Security Info Registration with TAP | v1.1 | Enabled | Security info registration with Temporary Access Pass |
-| CAU013 | CAU013-All Grant Require phishing resistant MFA for All users when Browser and Modern Auth Clients | v1.0 | Enabled | Enforces phishing-resistant MFA for all users |
-| CAU014 | CAU014-All Block Managed Identity when Sign in Risk is Medium or High | v1.0 | Enabled | Blocks managed identity access during risky sign-ins |
-| CAU015 | CAU015-All Block access for High Risk Sign-in for All Users when Browser and Modern Auth Clients | v1.0 | Enabled | Blocks high-risk sign-in attempts |
-| CAU016 | CAU016-All Block access for High Risk Users for All Users when Browser and Modern Auth Clients | v1.0 | Enabled | Blocks access for high-risk user accounts |
-| CAU017 | CAU017-All Session set Sign-in Frequency for Admins when Browser | v1.0 | Enabled | Enforces frequent re-authentication for admins |
-| CAU018 | CAU018-All Session disable browser persistence for Admins when Browser | v1.0 | Enabled | Prevents persistent sessions for admin accounts |
-| CAU019 | CAU019-Selected Only allow approved apps for guests when Browser and Modern Auth Clients | v1.0 | Enabled | Restricts guest access to approved applications |
+| CAU001 | CAU001-All Grant Require MFA for guests when Browser and Modern Auth Clients | v1.1 | Must Have | Requires MFA for guest user access |
+| CAU001A | CAU001A-Windows Azure Active Directory Grant Require MFA for guests when Browser and Modern Auth Clients | v1.0 | Must Have | Requires MFA for Azure AD guest access |
+| CAU002 | CAU002-All Grant Require MFA for All users when Browser and Modern Auth Clients | v1.5 | Must Have | Universal MFA requirement |
+| CAU003 | CAU003-Selected Block unapproved apps for guests when Browser and Modern Auth Clients | v1.0 | Could Have | Restricts guest access to approved applications |
+| CAU004 | CAU004-Selected Session route through MDCA for All users when Browser on Non-Compliant | v1.2 | Could Have | Routes non-compliant traffic through Microsoft Defender for Cloud Apps |
+| CAU005 | CAU005-Selected Session route through MDCA for All users when Browser on Compliant | v1.1 | Could Have | Routes compliant traffic through MDCA for monitoring |
+| CAU006 | CAU006-All Grant access for Medium and High Risk Sign-in for All Users when Browser and Modern Auth Clients require MFA | v1.4 | Could Have | Requires MFA for risky sign-ins |
+| CAU007 | CAU007-All Grant access for Medium and High Risk Users for All Users when Browser and Modern Auth Clients require PWD reset | v1.3 | Could Have | Requires password reset for risky users |
+| CAU008 | CAU008-All Grant Require Phishing Resistant MFA for Admins when Browser and Modern Auth Clients | v1.4 | Should Have | Enforces phishing-resistant MFA for administrators |
+| CAU009 | CAU009-Management Grant Require MFA for Admin Portals for All Users when Browser and Modern Auth Clients | v1.2 | Must Have | Requires MFA for management portal access |
+| CAU010 | CAU010-All Grant Require ToU for All Users when Browser and Modern Auth Clients | v1.2 | Could Have | Enforces Terms of Use acceptance |
+| CAU011 | CAU011-All Block access for All users except licensed when Browser and Modern Auth Clients | v1.0 | Should Have (be carefull) | Restricts access to licensed users only |
+| CAU012 | CAU012-RSI Combined Security Info Registration with TAP | v1.1 | Should Have | Security info registration with Temporary Access Pass |
+| CAU013 | CAU013-All Grant Require phishing resistant MFA for All users when Browser and Modern Auth Clients | v1.0 | Should Have | Enforces phishing-resistant MFA for all users |
+| CAU014 | CAU014-All Block Managed Identity when Sign in Risk is Medium or High | v1.0 | Must Have | Blocks managed identity access during risky sign-ins |
+| CAU015 | CAU015-All Block access for High Risk Sign-in for All Users when Browser and Modern Auth Clients | v1.0 | Must Have | Blocks high-risk sign-in attempts |
+| CAU016 | CAU016-All Block access for High Risk Users for All Users when Browser and Modern Auth Clients | v1.0 | Must Have | Blocks access for high-risk user accounts |
+| CAU017 | CAU017-All Session set Sign-in Frequency for Admins when Browser | v1.0 | Must Have | Enforces frequent re-authentication for admins |
+| CAU018 | CAU018-All Session disable browser persistence for Admins when Browser | v1.0 | Must Have | Prevents persistent sessions for admin accounts |
+| CAU019 | CAU019-Selected Only allow approved apps for guests when Browser and Modern Auth Clients | v1.0 | Should Have | Restricts guest access to approved applications |
 
 ---
 
@@ -492,4 +492,5 @@ These policies are provided as-is for reference and adaptation to your organizat
 **Last Updated**: October 2025  
 **Total Policies**: 48  
 **Policy Categories**: 4 (CAD, CAL, CAP, CAU)
+
 
