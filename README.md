@@ -177,7 +177,7 @@ Requires MFA to access Office 365 when working on a browser on a non-compliant d
 Block all the platforms which are not covered by a Conditional Access policy.
 
 #### CAD006 - Session block download on unmanaged device for All users when Browser and Modern App Clients and Non-Compliant (v1.5)
-This prevents downloads from Office 365 on non-compliant devices. Users cannot download attachments, and cannot print attachments. In order for this to work you need to configure the mailbox policy, and SharePoint global settings. For SharePoint you can also define Purview Sensitivity Labels to provide more granular settings.
+This prevents downloads from Office 365 on non-compliant devices. Users cannot download attachments, and cannot print attachments. In order for this to work you need to configure the mailbox policy, and SharePoint global settings. For SharePoint you can also define Purview Sensitivity Labels to provide more granular settings. See: https://www.vansurksum.com/2020/06/26/limit-access-to-outlook-web-access-and-sharepoint-online-and-onedrive-using-conditional-access-app-enforced-restrictions/ and https://www.vansurksum.com/2020/12/04/defining-more-granularity-for-your-conditional-access-app-enforced-restrictions-using-sensitivity-labels/
 
 #### CAD007 - Session set Sign-in Frequency for Apps for All users when Modern Auth Clients and Non-Compliant (v1.2)
 Sets the sign-in frequency to 7 days for non-compliant devices when using Modern Authentication Clients, which is basically for Apps installed on iOS and Android.
@@ -492,5 +492,6 @@ These policies are provided as-is for reference and adaptation to your organizat
 **Last Updated**: October 2025  
 **Total Policies**: 48  
 **Policy Categories**: 4 (CAD, CAL, CAP, CAU)
+
 
 
