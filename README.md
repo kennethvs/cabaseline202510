@@ -168,7 +168,7 @@ Devices must be managed with Microsoft Intune and Compliance Policies should be 
 Devices must be managed with Microsoft Intune and Compliance Policies should be assigned.
 
 #### CAD003 - Grant iOS and Android access for All users when Modern Auth Clients and AppProPol or Compliant (v1.3)
-Either iOS or Android device must be managed using Microsoft Intune, with a compliance policy assigned, or the device is not managed (BYOD) and the app must be protected using an Intune App Protection Policy.
+Either iOS or Android device must be managed using Microsoft Intune, with a compliance policy assigned, or the device is not managed (BYOD) and the app must be protected using an Intune App Protection Policy. See the following article for more info: https://www.vansurksum.com/2025/02/11/mam-vs-mdm-choosing-the-right-mobile-management-approach/
 
 #### CAD004 - Grant Require MFA for All users when Browser and Non-Compliant (v1.3)
 Requires MFA to access Office 365 when working on a browser on a non-compliant device. Note that we only allow browser access on non-compliant devices, which could be either managed or unmanaged.
@@ -492,6 +492,7 @@ These policies are provided as-is for reference and adaptation to your organizat
 **Last Updated**: October 2025  
 **Total Policies**: 48  
 **Policy Categories**: 4 (CAD, CAL, CAP, CAU)
+
 
 
 
